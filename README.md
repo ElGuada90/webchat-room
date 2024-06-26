@@ -168,7 +168,7 @@ if __name__ == '__main__':
             });
         
             socket.on('message', function(msg) {
-                var messageElement = $('<p>');
+                var messageElement = $('<p class="message">');
                 var utcDate = new Date(msg.timestamp);
                 var localDate = new Date(utcDate.toLocaleString("en-US", {timeZone: "America/Panama"}));  // Convertir a la hora local de Panamá
                 // Use <pre-warp> to preserve spaces and newlines
